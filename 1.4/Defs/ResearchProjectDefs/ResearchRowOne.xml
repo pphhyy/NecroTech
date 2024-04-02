@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef ParentName="pphhyy_BaseNecroTech_Basic">
+		<defName>pphhyy_NecroTechBasic</defName>
+		<label>NecroTech Basic</label>
+		<description>NecroTech test</description>
+        <techLevel>Industrial</techLevel>
+        <baseCost>500</baseCost>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>2.0</researchViewY>
+    <prerequisites>
+      <li>BasicMechtech</li>
+    </prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="pphhyy_BaseNecroTech_Basic">
+		<defName>pphhyy_NecroTechGear</defName>
+		<label>NecroTech Gear</label>
+		<description>NecroTech test</description>
+        <techLevel>Industrial</techLevel>
+        <baseCost>500</baseCost>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>1.0</researchViewY>
+    <prerequisites>
+      <li>pphhyy_NecroTechBasic</li>
+    </prerequisites>
+	</ResearchProjectDef>
+
+<!-- Animals -->
+
+	<ResearchProjectDef ParentName="pphhyy_BaseNecroTech_Basic">
+		<defName>pphhyy_NecroTechAnimalsTier1</defName>
+		<label>NecroTech AnimalsTier1</label>
+		<description>NecroTech test</description>
+        <techLevel>Industrial</techLevel>
+        <baseCost>500</baseCost>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>2.0</researchViewY>
+    <prerequisites>
+      <li>pphhyy_NecroTechBasic</li>
+    </prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="pphhyy_BaseNecroTech_Basic">
+		<defName>pphhyy_NecroTechAnimalsTier2</defName>
+		<label>NecroTech AnimalsTier2</label>
+		<description>NecroTech test</description>
+        <techLevel>Industrial</techLevel>
+        <baseCost>500</baseCost>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>2.0</researchViewY>
+    <prerequisites>
+      <li>pphhyy_NecroTechBasic</li>
+    </prerequisites>
+	</ResearchProjectDef>
+
+  <!-- NecroTechs -->
+
+	<ResearchProjectDef ParentName="pphhyy_BaseNecroTech_Basic">
+		<defName>pphhyy_NecroTechStandard</defName>
+		<label>NecroTech Standard</label>
+		<description>NecroTech test</description>
+        <techLevel>Industrial</techLevel>
+        <baseCost>500</baseCost>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>3.0</researchViewY>
+    <prerequisites>
+      <li>pphhyy_NecroTechBasic</li>
+    </prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="pphhyy_BaseNecroTech_Basic">
+		<defName>pphhyy_NecroTechHigh</defName>
+		<label>NecroTech High</label>
+		<description>NecroTech test</description>
+        <techLevel>Industrial</techLevel>
+        <baseCost>500</baseCost>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>3.0</researchViewY>
+    <prerequisites>
+      <li>pphhyy_NecroTechStandard</li>
+    </prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="pphhyy_BaseNecroTech_Basic">
+		<defName>pphhyy_NecroTechUltra</defName>
+		<label>NecroTech Ultra</label>
+		<description>NecroTech test</description>
+        <techLevel>Industrial</techLevel>
+        <baseCost>500</baseCost>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>3.0</researchViewY>
+    <prerequisites>
+      <li>pphhyy_NecroTechHigh</li>
+    </prerequisites>
+	</ResearchProjectDef>
+
+</Defs>

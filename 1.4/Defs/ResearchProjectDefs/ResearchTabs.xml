@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchTabDef>
+    <defName>pphhyy_NecroTech_Tab</defName>
+    <label>NecroTech</label>
+  </ResearchTabDef>
+  
+  <!-- Bases -->
+
+  <ResearchProjectDef Abstract="True" Name="pphhyy_BaseNecroTech_Research">
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <!--
+	<techprintCount>1</techprintCount>
+    <techprintCommonality>1</techprintCommonality>
+    <techprintMarketValue>500</techprintMarketValue>
+    <heldByFactionCategoryTags><li>GreatHouseTelvanni</li></heldByFactionCategoryTags>
+	-->
+	<tab>pphhyy_NecroTech_Tab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef Abstract="True" Name="pphhyy_BaseNecroTech_Basic" ParentName="pphhyy_BaseNecroTech_Research">
+    <baseCost>500</baseCost>
+  </ResearchProjectDef>
+
+</Defs>

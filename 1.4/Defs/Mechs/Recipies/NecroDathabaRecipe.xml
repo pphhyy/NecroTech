@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="pphhyy_NecroDathabaSkeleton" Abstract="True">
+    <jobString>Gestating Necro Skeleton.</jobString>
+    <workAmount>1200</workAmount>
+    <gestationCycles>1</gestationCycles>
+    <formingTicks>60000</formingTicks>
+    <!-- 1 day per 60k -->
+    <mechanitorOnlyRecipe>true</mechanitorOnlyRecipe>
+    <workSpeedStat>MechFormingSpeed</workSpeedStat>
+    <soundWorking>MechGestatorCycle_Initiating</soundWorking>
+  </RecipeDef>
+
+  <RecipeDef ParentName="pphhyy_NecroDathabaSkeleton">
+    <defName>pphhyy_Mech_NecroDathaba</defName>
+    <label>gestate Necro Skeleton</label>
+    <description>Gestate a Necro Skeleton.</description>
+    <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>pphhyy_NecroMetal</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>pphhyy_VitaeOil</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreBasic</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <pphhyy_Mech_NecroDathaba>1</pphhyy_Mech_NecroDathaba>
+    </products>
+    <recipeUsers>
+		  <li>MechGestator</li>
+	  </recipeUsers>
+  </RecipeDef>
+
+</Defs>
