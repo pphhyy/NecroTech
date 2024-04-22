@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Base Recipe -->
+    <RecipeDef Name="pphhyy_BaseNecroSkeletonTier1" ParentName="pphhyy_BaseNecroSkeleton" Abstract="True">
+        <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>pphhyy_NecroMetal</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>pphhyy_VitaeOil</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SubcoreBasic</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+    </RecipeDef>
+
+    <!-- Necro Kathari -->
+    <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+        <defName>pphhyy_Mech_NecroKathari</defName>
+        <label>gestate Necro NecroKathari</label>
+        <description>Gestate a Necro Skeleton.</description>
+        <products>
+            <pphhyy_Mech_NecroSafra>1</pphhyy_Mech_NecroSafra>
+        </products>
+    </RecipeDef>
+
+    <!-- Necro Safra -->
+    <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+        <defName>pphhyy_Mech_NecroAnelk</defName>
+        <label>gestate Necro NecroAnelk</label>
+        <description>Gestate a Necro Skeleton.</description>
+        <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
+        <products>
+            <pphhyy_Mech_NecroAnelk>1</pphhyy_Mech_NecroAnelk>
+        </products>
+    </RecipeDef>
+
+    <!-- Necro Safra -->
+    <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+        <defName>pphhyy_Mech_NecroKatask</defName>
+        <label>gestate Necro NecroKatask</label>
+        <description>Gestate a Necro Skeleton.</description>
+        <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
+        <products>
+            <pphhyy_Mech_NecroKatask>1</pphhyy_Mech_NecroKatask>
+        </products>
+    </RecipeDef>
+
+    <!-- Necro Safra -->
+    <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+        <defName>pphhyy_Mech_NecroHelots</defName>
+        <label>gestate Necro NecroHelots</label>
+        <description>Gestate a Necro Skeleton.</description>
+        <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
+        <products>
+            <pphhyy_Mech_NecroHelots>1</pphhyy_Mech_NecroHelots>
+        </products>
+    </RecipeDef>
+
+    <!-- Necro Safra -->
+    <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+        <defName>pphhyy_Mech_NecroSafra</defName>
+        <label>gestate Necro NecroSafra</label>
+        <description>Gestate a Necro Skeleton.</description>
+        <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
+        <products>
+            <pphhyy_Mech_NecroSafra>1</pphhyy_Mech_NecroSafra>
+        </products>
+    </RecipeDef>
+
+</Defs>

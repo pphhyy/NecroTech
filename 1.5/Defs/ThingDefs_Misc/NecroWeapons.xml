@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>pphhyy_NecroClub</defName>
+        <label>Necro club</label>
+        <description>DESCRIPTION</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Gear/NecroClub</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <techLevel>Medieval</techLevel>
+        <costStuffCount>30</costStuffCount>
+        <statBases>
+            <WorkToMake>6000</WorkToMake>
+            <Mass>1.25</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>Smithing</li>
+                <li>pphhyy_NecroTechGearTier1</li>
+            </researchPrerequisites>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <pphhyy_NecroMetal>25</pphhyy_NecroMetal>
+        </costList>
+        <weaponTags>
+            <li>pphhyyNecroHelots</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>head</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+</Defs>

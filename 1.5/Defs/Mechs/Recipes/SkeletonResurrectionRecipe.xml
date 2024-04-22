@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <RecipeDef ParentName="BaseMechanoidResurrectionRecipe">
+        <defName>pphhyy_ResurrectTier1Skeleton</defName>
+        <label>resurrect tier 1 skeleton</label>
+        <description>Resurrect a friendly tier 1 skeleton. So long as the skeleton's body is not completely destroyed, it can be resurrected.</description>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Corpses</li>
+              </categories>
+            </filter>
+            <count>1</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>pphhyy_NecroMetal</li>
+              </thingDefs>
+            </filter>
+            <count>10</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>pphhyy_VitaeOil</li>
+              </thingDefs>
+            </filter>
+            <count>10</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Corpse_pphhyy_Mech_NecroKathari</li>
+            <li>Corpse_pphhyy_Mech_NecroAgri</li>
+            <li>Corpse_pphhyy_Mech_NecroAnelk</li>
+            <li>Corpse_pphhyy_Mech_NecroKatask</li>
+            <li>Corpse_pphhyy_Mech_NecroHelots</li>
+            <li>Corpse_pphhyy_Mech_NecroSafra</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+      </RecipeDef>
+
+</Defs>

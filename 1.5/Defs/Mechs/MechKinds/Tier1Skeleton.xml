@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- NecroKathari -->
+    <ThingDef ParentName="pphhyy_NecroSkeletonBase">
+        <defName>pphhyy_Mech_NecroKathari</defName>
+        <label>Necro-Kathari</label>
+        <description>skelyboi.</description>
+        <statBases>
+            <CleaningSpeed>0.5</CleaningSpeed>
+        </statBases>
+        <race>
+            <mechEnabledWorkTypes>
+                <li>Cleaning</li>
+            </mechEnabledWorkTypes>
+        </race>
+    </ThingDef>
+
+    <PawnKindDef ParentName="LightMechanoidKind">
+        <defName>pphhyy_Mech_NecroKathari</defName>
+        <label>Necro-Kathari</label>
+        <race>pphhyy_Mech_NecroKathari</race>
+        <combatPower>10</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Mechs/WorkMechs/NecroKathari</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.25</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!-- NecroAgri -->
+    <ThingDef ParentName="pphhyy_NecroSkeletonBase">
+        <defName>pphhyy_Mech_NecroAgri</defName>
+        <label>Necro-Agri</label>
+        <description>skelyboi.</description>
+        <race>
+            <mechEnabledWorkTypes>
+                <li>PlantCutting</li>
+                <li>Growing</li>
+            </mechEnabledWorkTypes>
+            <mechWorkTypePriorities>
+                <PlantCutting>2</PlantCutting>
+            </mechWorkTypePriorities>
+        </race>
+    </ThingDef>
+
+    <PawnKindDef ParentName="LightMechanoidKind">
+        <defName>pphhyy_Mech_NecroAgri</defName>
+        <label>Necro-Agri</label>
+        <race>pphhyy_Mech_NecroAgri</race>
+        <combatPower>10</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Mechs/WorkMechs/NecroAgri</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.25</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!-- NecroAnelk-->
+    <ThingDef ParentName="pphhyy_NecroSkeletonBase">
+        <defName>pphhyy_Mech_NecroAnelk</defName>
+        <label>Necro-Anelk</label>
+        <description>skelyboi.</description>
+        <race>
+            <mechEnabledWorkTypes>
+                <li>Hauling</li>
+            </mechEnabledWorkTypes>
+        </race>
+    </ThingDef>
+
+    <PawnKindDef ParentName="LightMechanoidKind">
+        <defName>pphhyy_Mech_NecroAnelk</defName>
+        <label>Necro-Anelk</label>
+        <race>pphhyy_Mech_NecroAnelk</race>
+        <combatPower>10</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Mechs/Husk/NecroHusk</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.50</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!-- NecroKatask -->
+    <ThingDef ParentName="pphhyy_NecroSkeletonBase">
+        <defName>pphhyy_Mech_NecroKatask</defName>
+        <label>Necro-Katask</label>
+        <description>skelyboi.</description>
+        <statBases>
+            <ConstructionSpeed>0.5</ConstructionSpeed>
+        </statBases>
+        <race>
+            <mechEnabledWorkTypes>
+                <li>Construction</li>
+            </mechEnabledWorkTypes>
+        </race>
+    </ThingDef>
+
+    <PawnKindDef ParentName="LightMechanoidKind">
+        <defName>pphhyy_Mech_NecroKatask</defName>
+        <label>Necro-Katask</label>
+        <race>pphhyy_Mech_NecroKatask</race>
+        <combatPower>10</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Mechs/Husk/NecroHusk</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.50</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!-- NecroHelots -->
+    <ThingDef ParentName="pphhyy_NecroSkeletonBase">
+        <defName>pphhyy_Mech_NecroHelots</defName>
+        <label>Necro-Helots</label>
+        <description>skelyboi.</description>
+        <statBases>
+            <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+        </statBases>
+    </ThingDef>
+
+    <PawnKindDef ParentName="LightMechanoidKind">
+        <defName>pphhyy_Mech_NecroHelots</defName>
+        <label>Necro-Helots</label>
+        <race>pphhyy_Mech_NecroHelots</race>
+        <combatPower>45</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Mechs/Husk/NecroHusk</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.50</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <weaponTags>
+            <li>pphhyyNecroHelots</li>
+        </weaponTags>
+    </PawnKindDef>
+
+    <!-- NecroSafra -->
+    <ThingDef ParentName="pphhyy_NecroSkeletonBase">
+        <defName>pphhyy_Mech_NecroSafra</defName>
+        <label>Necro-Safra</label>
+        <description>skelyboi.</description>
+    </ThingDef>
+
+    <PawnKindDef ParentName="LightMechanoidKind">
+        <defName>pphhyy_Mech_NecroSafra</defName>
+        <label>Necro-Safra</label>
+        <race>pphhyy_Mech_NecroSafra</race>
+        <combatPower>45</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Mechs/Safra/NecroSafraHusk</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.50</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <weaponTags>
+            <li>MechanoidGunShortRange</li>
+        </weaponTags>
+    </PawnKindDef>
+
+</Defs>
