@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Base Recipe -->
+<RecipeDef Name="pphhyy_BaseNecroSkeletonTier4" ParentName="pphhyy_BaseNecroSkeleton" Abstract="True">
+    <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>pphhyy_NecroMetal</li>
+                </thingDefs>
+            </filter>
+            <count>70</count>
+        </li>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>pphhyy_VitaeOil</li>
+                </thingDefs>
+            </filter>
+            <count>70</count>
+        </li>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>SubcoreHigh</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+</RecipeDef>
+
+<!-- Necro Arash -->
+<RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+    <defName>pphhyy_Mech_NecroArash</defName>
+    <label>gestate NecroArash</label>
+    <description>Gestate a Necro Skeleton.</description>
+    <products>
+        <pphhyy_Mech_NecroArash>1</pphhyy_Mech_NecroArash>
+    </products>
+</RecipeDef>
+
+<!-- Necro Satrap -->
+<RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+    <defName>pphhyy_Mech_NecroSatrap</defName>
+    <label>gestate NecroSatrap</label>
+    <description>Gestate a Necro Skeleton.</description>
+    <products>
+        <pphhyy_Mech_NecroSatrap>1</pphhyy_Mech_NecroSatrap>
+    </products>
+</RecipeDef>
+
+</Defs>

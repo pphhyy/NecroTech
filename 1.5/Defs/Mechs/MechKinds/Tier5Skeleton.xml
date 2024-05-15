@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <!-- Necro Theristis-->
+    <ThingDef ParentName="pphhyy_NecroSkeletonBase">
+        <defName>pphhyy_Mech_NecroTheristis</defName>
+        <label>Necro-Theristis</label>
+        <description>skelyboi.</description>
+        <statBases>
+            <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+        </statBases>
+    </ThingDef>
+
+    <PawnKindDef ParentName="LightMechanoidKind">
+        <defName>pphhyy_Mech_NecroTheristis</defName>
+        <label>Necro Theristis</label>
+        <race>pphhyy_Mech_NecroTheristis</race>
+        <combatPower>120</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Mechs/Theristis/Theristis</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.70</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <weaponTags>
+            <li>pphhyyNecroTheristis</li>
+        </weaponTags>
+    </PawnKindDef>
+</Defs>

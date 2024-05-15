@@ -21,11 +21,22 @@
       <li>pphhyy_Mech_NecroAnelk</li>
       <li>pphhyy_Mech_NecroKatask</li>
       <li>pphhyy_Mech_NecroHelots</li>
+      <li>pphhyy_Mech_NecroAgri</li>
       <li>pphhyy_Mech_NecroSafra</li>
-      <li>pphhyy_Mech_NecroCycloptic</li>
       <li>pphhyy_Mech_NecroDathaba</li>
+      <li>pphhyy_Mech_NecroEfreet</li>
+      <li>pphhyy_Mech_NecroExoryxi</li>
+      <li>pphhyy_Mech_NecroCycloptic</li>
+      <li>pphhyy_Mech_NecroAltair</li>
+      <li>pphhyy_Mech_NecroAspida</li>
+      <li>pphhyy_Mech_NecroGoliath</li>
+      <li>pphhyy_Mech_NecroParthi</li>
+      <li>pphhyy_Mech_NecroZahhak</li>
+      <li>pphhyy_Mech_NecroSkafos</li>
       <li>pphhyy_Mech_NecroSatrap</li>
-      <li>ResurrectLightMech</li>
+      <li>pphhyy_Mech_NecroArash</li>
+      <li>pphhyy_Mech_NecroTheristis</li>
+      <li>pphhyy_ResurrectSkeleton</li>
     </recipes>
     <statBases>
       <MaxHitPoints>250</MaxHitPoints>
@@ -39,7 +50,7 @@
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <researchPrerequisites>
-      <li>BasicMechtech</li>
+      <li>pphhyy_NecroTechBasic</li>
     </researchPrerequisites>
     <building>
       <barDrawData>
@@ -101,13 +112,6 @@
         <south>MechGestatorFormed_South</south>
       </gestatorFormedMote>
     </building>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>350</basePowerConsumption>
-        <idlePowerDraw>50</idlePowerDraw>
-      </li>
-    </comps>
   </ThingDef>
 
 </Defs>

@@ -35,17 +35,27 @@
     <!-- Necro Kathari -->
     <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
         <defName>pphhyy_Mech_NecroKathari</defName>
-        <label>gestate Necro NecroKathari</label>
+        <label>gestate NecroKathari</label>
         <description>Gestate a Necro Skeleton.</description>
         <products>
-            <pphhyy_Mech_NecroSafra>1</pphhyy_Mech_NecroSafra>
+            <pphhyy_Mech_NecroKathari>1</pphhyy_Mech_NecroKathari>
         </products>
     </RecipeDef>
 
-    <!-- Necro Safra -->
+      <!-- Necro Agri -->
+      <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+        <defName>pphhyy_Mech_NecroAgri</defName>
+        <label>gestate NecroAgri</label>
+        <description>Gestate a Necro Skeleton.</description>
+        <products>
+            <pphhyy_Mech_NecroAgri>1</pphhyy_Mech_NecroAgri>
+        </products>
+    </RecipeDef>
+
+    <!-- Necro Anelk -->
     <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
         <defName>pphhyy_Mech_NecroAnelk</defName>
-        <label>gestate Necro NecroAnelk</label>
+        <label>gestate NecroAnelk</label>
         <description>Gestate a Necro Skeleton.</description>
         <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
         <products>
@@ -53,10 +63,10 @@
         </products>
     </RecipeDef>
 
-    <!-- Necro Safra -->
+    <!-- Necro Katask -->
     <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
         <defName>pphhyy_Mech_NecroKatask</defName>
-        <label>gestate Necro NecroKatask</label>
+        <label>gestate NecroKatask</label>
         <description>Gestate a Necro Skeleton.</description>
         <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
         <products>
@@ -64,10 +74,10 @@
         </products>
     </RecipeDef>
 
-    <!-- Necro Safra -->
+    <!-- Necro Helots -->
     <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
         <defName>pphhyy_Mech_NecroHelots</defName>
-        <label>gestate Necro NecroHelots</label>
+        <label>gestate NecroHelots</label>
         <description>Gestate a Necro Skeleton.</description>
         <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
         <products>
@@ -78,7 +88,7 @@
     <!-- Necro Safra -->
     <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
         <defName>pphhyy_Mech_NecroSafra</defName>
-        <label>gestate Necro NecroSafra</label>
+        <label>gestate NecroSafra</label>
         <description>Gestate a Necro Skeleton.</description>
         <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
         <products>

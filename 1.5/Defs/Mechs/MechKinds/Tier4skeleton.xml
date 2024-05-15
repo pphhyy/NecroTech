@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+    <!-- Necro Satrap -->
+    <ThingDef ParentName="pphhyy_NecroSkeletonBase">
+        <defName>pphhyy_Mech_NecroSatrap</defName>
+        <label>Necro-Satrap</label>
+        <description>skelyboi.</description>
+        <statBases>
+            <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+            <ArmorRating_Sharp>1</ArmorRating_Sharp>
+        </statBases>
+    </ThingDef>
+
+    <PawnKindDef ParentName="LightMechanoidKind">
+        <defName>pphhyy_Mech_NecroSatrap</defName>
+        <label>Necro Satrap</label>
+        <race>pphhyy_Mech_NecroSatrap</race>
+        <combatPower>100</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Mechs/Satrap/NecroSatrap</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.65</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <weaponTags>
+            <li>pphhyyNecroSatrap</li>
+        </weaponTags>
+    </PawnKindDef>
+
+<!-- Necro Arash -->
+<ThingDef ParentName="pphhyy_NecroSkeletonBase">
+    <defName>pphhyy_Mech_NecroArash</defName>
+    <label>Necro-Arash</label>
+    <description>skelyboi.</description>
+    <statBases>
+        <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+    </statBases>
+</ThingDef>
+
+<PawnKindDef ParentName="LightMechanoidKind">
+    <defName>pphhyy_Mech_NecroArash</defName>
+    <label>Necro Arash</label>
+    <race>pphhyy_Mech_NecroArash</race>
+    <combatPower>90</combatPower>
+    <lifeStages>
+        <li>
+            <bodyGraphicData>
+                <texPath>Mechs/Arash/NecroArash</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>1.60</drawSize>
+                <shadowData>
+                    <volume>(0.3, 0.4, 0.3)</volume>
+                    <offset>(0,0,-0.25)</offset>
+                </shadowData>
+            </bodyGraphicData>
+        </li>
+    </lifeStages>
+    <weaponTags>
+        <li>pphhyyNecroArash</li>
+    </weaponTags>
+</PawnKindDef>
+</Defs>

@@ -7,7 +7,7 @@
             <MoveSpeed>3.8</MoveSpeed>
             <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
             <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
-            <MechEnergyLossPerHP>0.66</MechEnergyLossPerHP>
+            <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
         </statBases>
         <race>
             <lifeStageAges>
