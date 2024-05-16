@@ -3,7 +3,7 @@
 
 <!-- Base Recipe -->
 <RecipeDef Name="pphhyy_BaseNecroSkeletonTier3" ParentName="pphhyy_BaseNecroSkeleton" Abstract="True">
-    <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
+    <researchPrerequisite>pphhyy_NecroTechHigh</researchPrerequisite>
     <ingredients>
         <li>
             <filter>
@@ -33,7 +33,7 @@
 </RecipeDef>
 
  <!-- Necro Goliath -->
- <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier3">
     <defName>pphhyy_Mech_NecroGoliath</defName>
     <label>gestate NecroGoliath</label>
     <description>Gestate a Necro Skeleton.</description>
@@ -43,7 +43,7 @@
 </RecipeDef>
 
  <!-- Necro Cycloptic -->
- <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier3">
     <defName>pphhyy_Mech_NecroCycloptic</defName>
     <label>gestate NecroCycloptic</label>
     <description>Gestate a Necro Skeleton.</description>
@@ -53,7 +53,7 @@
 </RecipeDef> 
 
  <!-- Necro Altair -->
- <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier3">
     <defName>pphhyy_Mech_NecroAltair</defName>
     <label>gestate NecroAltair</label>
     <description>Gestate a Necro Skeleton.</description>
@@ -63,7 +63,7 @@
 </RecipeDef>
 
  <!-- Necro Adar -->
- <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier3">
     <defName>pphhyy_Mech_NecroAdar</defName>
     <label>gestate NecroAdar</label>
     <description>Gestate a Necro Skeleton.</description>
@@ -73,7 +73,7 @@
 </RecipeDef>
 
  <!-- Necro Skafos -->
- <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier3">
     <defName>pphhyy_Mech_NecroSkafos</defName>
     <label>gestate NecroSkafos</label>
     <description>Gestate a Necro Skeleton.</description>
@@ -83,7 +83,7 @@
 </RecipeDef>
 
  <!-- Necro Zahhak -->
- <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier3">
     <defName>pphhyy_Mech_NecroZahhak</defName>
     <label>gestate NecroZahhak</label>
     <description>Gestate a Necro Skeleton.</description>
@@ -93,7 +93,7 @@
 </RecipeDef>
 
  <!-- Necro Aspida -->
- <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier3">
     <defName>pphhyy_Mech_NecroAspida</defName>
     <label>gestate NecroAspida</label>
     <description>Gestate a Necro Skeleton.</description>

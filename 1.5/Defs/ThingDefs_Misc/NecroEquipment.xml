@@ -1,222 +1,313 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Defs> 
+<Defs>
 
-<!-- Necro Shield Belt -->
+  <!-- Base Shield-->
 
-<ThingDef ParentName="ApparelBase">
-  <defName>pphhyy_ShieldPack</defName>
-  <label>shield generator</label>
-  <description>A projectile-repulsion device. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It prevents the wearer from firing out, and shuts down instantly if hit by EMP.</description>
-  <thingClass>Apparel</thingClass>
-  <graphicData>
-    <texPath>Gear/NecroShieldPack</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-  </graphicData>
-  <tickerType>Normal</tickerType>
-  <techLevel>Medieval</techLevel>
-  <statBases>
-    <Mass>3</Mass>
-    <WorkToMake>14000</WorkToMake>
-    <Flammability>0.4</Flammability>
-    <EnergyShieldRechargeRate>0.13</EnergyShieldRechargeRate>
-    <EnergyShieldEnergyMax>1.1</EnergyShieldEnergyMax>
-    <EquipDelay>2</EquipDelay>
-  </statBases>
-  <thingSetMakerTags>
-    <li>RewardStandardQualitySuper</li>
-  </thingSetMakerTags>
-  <costList>
-    <ComponentIndustrial>2</ComponentIndustrial>
-    <pphhyy_NecroMetal>50</pphhyy_NecroMetal>
-  </costList>
-  <recipeMaker>
-    <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-    <researchPrerequisite>ShieldBelt</researchPrerequisite>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <workSkill>Crafting</workSkill>
-    <effectWorking>Smith</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <recipeUsers>
-      <li>FueledSmithy</li>
-      <li>ElectricSmithy</li>
-    </recipeUsers>
-    <useIngredientsForColor>false</useIngredientsForColor>
-    <skillRequirements>
-      <Crafting>6</Crafting>
-    </skillRequirements>
-    <displayPriority>300</displayPriority>
-  </recipeMaker>
-  <thingCategories>
-    <li>ApparelUtility</li>
-  </thingCategories>
-  <apparel>
-    <wornGraphicPath>Gear/NecroShieldPack</wornGraphicPath>
-          <wornGraphicData>
-            <renderUtilityAsPack>true</renderUtilityAsPack>
-            <north>
-              <offset>(0,-0.15)</offset>
-            </north>
-            <south>
-              <offset>(0,-0.15)</offset>
-            </south>
-            <east>
-              <offset>(-0.35,-0.1)</offset>
-              <thin><offset>(0.05,0)</offset></thin>
-              <hulk><offset>(-0.15,0)</offset></hulk>
-              <fat> <offset>(-0.20,0)</offset></fat>
-            </east>
-            <west>
-              <offset>(0.35,-0.1)</offset>
-              <thin><offset>(-0.05,0)</offset></thin>
-              <hulk><offset>(0.15,0)</offset></hulk>
-              <fat> <offset>(0.20,0)</offset></fat>
-            </west>
-            <male>  <scale>(0.75,0.75)</scale></male>
-            <female><scale>(0.75,0.75)</scale></female>
-            <thin>  <scale>(0.7,0.7)</scale></thin>
-            <hulk>  <scale>(0.9,0.9)</scale></hulk>
-            <fat>   <scale>(0.9,0.9)</scale></fat>
-          </wornGraphicData>
-    <countsAsClothingForNudity>false</countsAsClothingForNudity>
-    <careIfWornByCorpse>false</careIfWornByCorpse>
-    <careIfDamaged>false</careIfDamaged>
-    <wearPerDay>0</wearPerDay>
-    <bodyPartGroups>
-      <li>Waist</li>
-    </bodyPartGroups>
-    <layers>
-      <li>Belt</li>
-    </layers>
-    <tags>
-      <li>BeltDefense</li>
-    </tags>
-    <developmentalStageFilter>Child, Adult</developmentalStageFilter>
-  </apparel>
-  <colorGenerator Class="ColorGenerator_Options">
-    <options>
+  <ThingDef Name="pphhyy_BaseShield" ParentName="BaseMeleeWeapon_Blunt_Quality" Abstract="True">
+    <techLevel>Medieval</techLevel>
+    <thingCategories Inherit="False">
+      <li>Apparel</li>
+    </thingCategories>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+      <MeleeHitChance>-2</MeleeHitChance>
+      <MeleeDodgeChance>-5</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <thingClass>VFECore.Apparel_Shield</thingClass>
+    <apparel>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <bodyPartGroups>
+        <li>LeftHand</li>
+      </bodyPartGroups>
+      <layers>
+        <li>VFEC_OuterShell</li>
+      </layers>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <equippedAngleOffset>0</equippedAngleOffset>
+    <tools>
       <li>
-        <weight>10</weight>
-        <only>(0.33,0.33,0.33,1)</only>
+        <label>base</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
       </li>
       <li>
-        <weight>10</weight>
-        <only>(0.65,0.65,0.65,1)</only>
+        <label>centre</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
       </li>
-      <li>
-        <weight>6</weight>
-        <min>(0.3,0.3,0.3,1)</min>
-        <max>(0.5,0.5,0.5,1)</max>
-      </li>
-      <li>
-        <weight>10</weight>
-        <only>(0.9,0.9,0.9,1)</only>
-      </li>
-    </options>
-  </colorGenerator>
-  <comps>
-    <li Class="CompProperties_Shield" />
-  </comps>
-  <allowedArchonexusCount>1</allowedArchonexusCount>
-  <tradeTags>
-    <li>Armor</li>
-  </tradeTags>
-</ThingDef>
+    </tools>
+  </ThingDef>
 
-<!-- Necro Bandwidth Pack-->
+  <!-- Necro Shield Belt -->
 
-    <ThingDef ParentName="MechanitorPackBase">
-        <defName>pphhyy_BandwidthPack</defName>
-        <label>Necro bandwidth pack</label>
-        <description>DESCRIPTION</description>
-        <techLevel>Spacer</techLevel>
-        <recipeMaker>
-          <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
-          <researchPrerequisite>pphhyy_NecroTechGearTier1</researchPrerequisite>
-          <recipeUsers>
-            <li>FueledSmithy</li>
-            <li>ElectricSmithy</li>
-          </recipeUsers>
-          <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-          <workSkill>Crafting</workSkill>
-          <effectWorking>Smith</effectWorking>
-          <soundWorking>Recipe_Machining</soundWorking>
-          <skillRequirements>
-            <Crafting>4</Crafting>
-          </skillRequirements>
-        </recipeMaker>
-        <costList>
-          <pphhyy_NecroMetal>50</pphhyy_NecroMetal>
-          <ComponentIndustrial>8</ComponentIndustrial>
-        </costList>
-        <graphicData>
-          <texPath>Gear/NecroBandwidthPack</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
-          <drawSize>(0.7,0.7)</drawSize>
-        </graphicData>
-        <tickerType>Normal</tickerType>
-        <statBases>
-          <WorkToMake>3200</WorkToMake>
-          <Mass>3</Mass>
-          <Flammability>0.4</Flammability>
-          <EquipDelay>2</EquipDelay>
-        </statBases>
-        <thingCategories>
-          <li>ApparelUtility</li>
-        </thingCategories>
-        <equippedStatOffsets>
-          <MechBandwidth>9</MechBandwidth>
-          <MechControlGroups>1</MechControlGroups>
-        </equippedStatOffsets>
-        <apparel>
-          <countsAsClothingForNudity>false</countsAsClothingForNudity>
-          <scoreOffset>4</scoreOffset>
-          <mechanitorApparel>true</mechanitorApparel>
-          <careIfWornByCorpse>false</careIfWornByCorpse>
-          <careIfDamaged>false</careIfDamaged>
-          <wearPerDay>0</wearPerDay>
-          <bodyPartGroups>
-            <li>Waist</li>
-          </bodyPartGroups>
-          <layers>
-            <li>Belt</li>
-          </layers>
-          <wornGraphicPath>Gear/NecroBandwidthPack</wornGraphicPath>
-          <wornGraphicData>
-            <renderUtilityAsPack>true</renderUtilityAsPack>
-            <north>
-              <offset>(0,-0.15)</offset>
-            </north>
-            <south>
-              <offset>(0,-0.15)</offset>
-            </south>
-            <east>
-              <offset>(-0.35,-0.1)</offset>
-              <thin><offset>(0.05,0)</offset></thin>
-              <hulk><offset>(-0.15,0)</offset></hulk>
-              <fat> <offset>(-0.20,0)</offset></fat>
-            </east>
-            <west>
-              <offset>(0.35,-0.1)</offset>
-              <thin><offset>(-0.05,0)</offset></thin>
-              <hulk><offset>(0.15,0)</offset></hulk>
-              <fat> <offset>(0.20,0)</offset></fat>
-            </west>
-            <male>  <scale>(0.75,0.75)</scale></male>
-            <female><scale>(0.75,0.75)</scale></female>
-            <thin>  <scale>(0.7,0.7)</scale></thin>
-            <hulk>  <scale>(0.9,0.9)</scale></hulk>
-            <fat>   <scale>(0.9,0.9)</scale></fat>
-          </wornGraphicData>
-        </apparel>
-        <tradeTags>
-          <li>ExoticMisc</li>
-        </tradeTags>
-      </ThingDef>
+  <ThingDef ParentName="ApparelBase">
+    <defName>pphhyy_ShieldPack</defName>
+    <label>shield generator</label>
+    <description>A projectile-repulsion device. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It prevents the wearer from firing out, and shuts down instantly if hit by EMP.</description>
+    <thingClass>Apparel</thingClass>
+    <graphicData>
+      <texPath>Gear/NecroShieldPack</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <Mass>3</Mass>
+      <WorkToMake>14000</WorkToMake>
+      <Flammability>0.4</Flammability>
+      <EnergyShieldRechargeRate>0.13</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.1</EnergyShieldEnergyMax>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <pphhyy_NecroMetal>50</pphhyy_NecroMetal>
+    </costList>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+      <researchPrerequisite>ShieldBelt</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <apparel>
+      <wornGraphicPath>Gear/NecroShieldPack</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north>
+          <offset>(0,-0.15)</offset>
+        </north>
+        <south>
+          <offset>(0,-0.15)</offset>
+        </south>
+        <east>
+          <offset>(-0.35,-0.1)</offset>
+          <thin>
+            <offset>(0.05,0)</offset>
+          </thin>
+          <hulk>
+            <offset>(-0.15,0)</offset>
+          </hulk>
+          <fat>
+            <offset>(-0.20,0)</offset>
+          </fat>
+        </east>
+        <west>
+          <offset>(0.35,-0.1)</offset>
+          <thin>
+            <offset>(-0.05,0)</offset>
+          </thin>
+          <hulk>
+            <offset>(0.15,0)</offset>
+          </hulk>
+          <fat>
+            <offset>(0.20,0)</offset>
+          </fat>
+        </west>
+        <male>
+          <scale>(0.75,0.75)</scale>
+        </male>
+        <female>
+          <scale>(0.75,0.75)</scale>
+        </female>
+        <thin>
+          <scale>(0.7,0.7)</scale>
+        </thin>
+        <hulk>
+          <scale>(0.9,0.9)</scale>
+        </hulk>
+        <fat>
+          <scale>(0.9,0.9)</scale>
+        </fat>
+      </wornGraphicData>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>BeltDefense</li>
+      </tags>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_Shield" />
+    </comps>
+    <allowedArchonexusCount>1</allowedArchonexusCount>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
 
-<!-- Advanced Necro Bandwidth Pack-->
+  <!-- Necro Bandwidth Pack-->
 
-<ThingDef ParentName="MechanitorPackBase">
+  <ThingDef ParentName="MechanitorPackBase">
+    <defName>pphhyy_BandwidthPack</defName>
+    <label>Necro bandwidth pack</label>
+    <description>DESCRIPTION</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+      <researchPrerequisite>pphhyy_NecroTechGearTier1</researchPrerequisite>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+      </recipeUsers>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <pphhyy_NecroMetal>50</pphhyy_NecroMetal>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <graphicData>
+      <texPath>Gear/NecroBandwidthPack</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>3200</WorkToMake>
+      <Mass>3</Mass>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <equippedStatOffsets>
+      <MechBandwidth>9</MechBandwidth>
+    </equippedStatOffsets>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <scoreOffset>4</scoreOffset>
+      <mechanitorApparel>true</mechanitorApparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <wornGraphicPath>Gear/NecroBandwidthPack</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north>
+          <offset>(0,-0.15)</offset>
+        </north>
+        <south>
+          <offset>(0,-0.15)</offset>
+        </south>
+        <east>
+          <offset>(-0.35,-0.1)</offset>
+          <thin>
+            <offset>(0.05,0)</offset>
+          </thin>
+          <hulk>
+            <offset>(-0.15,0)</offset>
+          </hulk>
+          <fat>
+            <offset>(-0.20,0)</offset>
+          </fat>
+        </east>
+        <west>
+          <offset>(0.35,-0.1)</offset>
+          <thin>
+            <offset>(-0.05,0)</offset>
+          </thin>
+          <hulk>
+            <offset>(0.15,0)</offset>
+          </hulk>
+          <fat>
+            <offset>(0.20,0)</offset>
+          </fat>
+        </west>
+        <male>
+          <scale>(0.75,0.75)</scale>
+        </male>
+        <female>
+          <scale>(0.75,0.75)</scale>
+        </female>
+        <thin>
+          <scale>(0.7,0.7)</scale>
+        </thin>
+        <hulk>
+          <scale>(0.9,0.9)</scale>
+        </hulk>
+        <fat>
+          <scale>(0.9,0.9)</scale>
+        </fat>
+      </wornGraphicData>
+    </apparel>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Advanced Necro Bandwidth Pack-->
+
+  <ThingDef ParentName="MechanitorPackBase">
     <defName>pphhyy_AdvBandwidthPack</defName>
     <label>Necro adv bandwidth pack</label>
     <description>DESCRIPTION</description>
@@ -257,7 +348,6 @@
     </thingCategories>
     <equippedStatOffsets>
       <MechBandwidth>15</MechBandwidth>
-      <MechControlGroups>2</MechControlGroups>
     </equippedStatOffsets>
     <apparel>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -283,25 +373,279 @@
         </south>
         <east>
           <offset>(-0.35,-0.1)</offset>
-          <thin><offset>(0.05,0)</offset></thin>
-          <hulk><offset>(-0.15,0)</offset></hulk>
-          <fat> <offset>(-0.20,0)</offset></fat>
+          <thin>
+            <offset>(0.05,0)</offset>
+          </thin>
+          <hulk>
+            <offset>(-0.15,0)</offset>
+          </hulk>
+          <fat>
+            <offset>(-0.20,0)</offset>
+          </fat>
         </east>
         <west>
           <offset>(0.35,-0.1)</offset>
-          <thin><offset>(-0.05,0)</offset></thin>
-          <hulk><offset>(0.15,0)</offset></hulk>
-          <fat> <offset>(0.20,0)</offset></fat>
+          <thin>
+            <offset>(-0.05,0)</offset>
+          </thin>
+          <hulk>
+            <offset>(0.15,0)</offset>
+          </hulk>
+          <fat>
+            <offset>(0.20,0)</offset>
+          </fat>
         </west>
-        <male>  <scale>(0.75,0.75)</scale></male>
-        <female><scale>(0.75,0.75)</scale></female>
-        <thin>  <scale>(0.7,0.7)</scale></thin>
-        <hulk>  <scale>(0.9,0.9)</scale></hulk>
-        <fat>   <scale>(0.9,0.9)</scale></fat>
+        <male>
+          <scale>(0.75,0.75)</scale>
+        </male>
+        <female>
+          <scale>(0.75,0.75)</scale>
+        </female>
+        <thin>
+          <scale>(0.7,0.7)</scale>
+        </thin>
+        <hulk>
+          <scale>(0.9,0.9)</scale>
+        </hulk>
+        <fat>
+          <scale>(0.9,0.9)</scale>
+        </fat>
       </wornGraphicData>
     </apparel>
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
   </ThingDef>
+
+  <!-- CMD Rod -->
+  <ThingDef ParentName="pphhyy_BaseShield">
+    <defName>pphhyy_CMDRod</defName>
+    <label>Necro command rod</label>
+    <description>DESCRIPTION</description>
+    <graphicData>
+      <texPath>Gear/NecroCMDRod</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <costList>
+      <pphhyy_NecroMetal>30</pphhyy_NecroMetal>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+      <WorkToMake>3500</WorkToMake>
+      <Mass>2.2</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MechControlGroups>1</MechControlGroups>
+    </equippedStatOffsets>
+    <comps>
+      <li Class="VFECore.CompProperties_Shield">
+        <coveredBodyPartGroups>
+          <li>Hands</li>
+        </coveredBodyPartGroups>
+        <offHandGraphicData>
+          <texPath>Gear/NecroCMDRod</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>1.2</drawSize>
+        </offHandGraphicData>
+        <offHandHoldOffset>
+          <northDefault>
+              <offset>(-0.05, 0, 0.2)</offset>
+              <behind>true</behind>
+          </northDefault>
+          <east>
+              <offset>(-0.15, 0, 0.2)</offset>
+              <behind>true</behind>
+          </east>
+          <south>
+              <offset>(0.2, -0.04, 0.2)</offset>
+          </south>
+          <west>
+              <offset>(0.15, 0, 0.2)</offset>
+          </west>
+      </offHandHoldOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- CMD Staff -->
+  <ThingDef ParentName="pphhyy_BaseShield">
+    <defName>pphhyy_CMDStaff</defName>
+    <label>Necro command staff</label>
+    <description>DESCRIPTION</description>
+    <graphicData>
+      <texPath>Gear/NecroCMDStaff</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <costList>
+      <pphhyy_NecroMetal>30</pphhyy_NecroMetal>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+      <WorkToMake>3500</WorkToMake>
+      <Mass>2.2</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MechControlGroups>2</MechControlGroups>
+    </equippedStatOffsets>
+    <equippedAngleOffset>60</equippedAngleOffset>
+    <comps>
+      <li Class="VFECore.CompProperties_Shield">
+        <coveredBodyPartGroups>
+          <li>Hands</li>
+        </coveredBodyPartGroups>
+        <offHandGraphicData>
+          <texPath>Gear/NecroCMDStaff</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>1.2</drawSize>
+        </offHandGraphicData>
+        <offHandHoldOffset>
+          <northDefault>
+              <offset>(-0.05, 0, 0.2)</offset>
+              <behind>true</behind>
+          </northDefault>
+          <east>
+              <offset>(-0.15, 0, 0.2)</offset>
+              <behind>true</behind>
+          </east>
+          <south>
+              <offset>(0.2, -0.04, 0.2)</offset>
+          </south>
+          <west>
+              <offset>(0.15, 0, 0.2)</offset>
+          </west>
+      </offHandHoldOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Helot Shield -->
+  <ThingDef ParentName="pphhyy_BaseShield">
+    <defName>pphhyy_HelotShield</defName>
+    <label>helot shield</label>
+    <description>Shield made of bones and Necro Steel</description>
+    <graphicData>
+      <texPath>Gear/NecroHelotShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <costList>
+      <pphhyy_HarvestedSkeleton>1</pphhyy_HarvestedSkeleton>
+      <pphhyy_NecroMetal>20</pphhyy_NecroMetal>
+    </costList>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.9</ArmorRating_Heat>
+      <WorkToMake>3500</WorkToMake>
+      <Mass>1.2</Mass>
+    </statBases>
+    <comps>
+      <li Class="VFECore.CompProperties_Shield">
+        <shieldTags>
+          <li>pphhyyShieldHelots</li>
+        </shieldTags>
+        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        <coveredBodyPartGroups>
+          <li>Neck</li>
+          <li>Torso</li>
+          <li>Arms</li>
+          <li>Hands</li>
+          <li>Legs</li>
+        </coveredBodyPartGroups>
+        <offHandGraphicData>
+          <texPath>Gear/NecroHelotShield</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>1</drawSize>
+        </offHandGraphicData>
+        <offHandHoldOffset>
+          <northDefault>
+              <offset>(-0.05, 0, -0.04)</offset>
+              <behind>true</behind>
+          </northDefault>
+          <east>
+              <offset>(-0.15, 0, -0.04)</offset>
+              <behind>true</behind>
+          </east>
+          <south>
+              <offset>(0.2, -0.04, -0.04)</offset>
+          </south>
+          <west>
+              <offset>(0.15, 0, -0.04)</offset>
+          </west>
+      </offHandHoldOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Helot Shield -->
+  <ThingDef ParentName="pphhyy_BaseShield">
+    <defName>pphhyy_ShieldDathaba</defName>
+    <label>dathaba shield</label>
+    <description>Shield made of bones and Necro Steel</description>
+    <graphicData>
+      <texPath>Gear/NecroShieldDathaba</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <costList>
+      <pphhyy_HarvestedSkeleton>1</pphhyy_HarvestedSkeleton>
+      <pphhyy_NecroMetal>20</pphhyy_NecroMetal>
+    </costList>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.9</ArmorRating_Heat>
+      <WorkToMake>3500</WorkToMake>
+      <Mass>1.2</Mass>
+    </statBases>
+    <comps>
+      <li Class="VFECore.CompProperties_Shield">
+        <shieldTags>
+          <li>pphhyyShieldDathaba</li>
+        </shieldTags>
+        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        <coveredBodyPartGroups>
+          <li>Neck</li>
+          <li>Torso</li>
+          <li>Arms</li>
+          <li>Hands</li>
+          <li>Legs</li>
+        </coveredBodyPartGroups>
+        <offHandGraphicData>
+          <texPath>Gear/NecroShieldDathaba</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>1</drawSize>
+        </offHandGraphicData>
+        <offHandHoldOffset>
+          <northDefault>
+              <offset>(-0.05, 0, -0.04)</offset>
+              <behind>true</behind>
+          </northDefault>
+          <east>
+              <offset>(-0.15, 0, -0.04)</offset>
+              <behind>true</behind>
+          </east>
+          <south>
+              <offset>(0.2, -0.04, -0.04)</offset>
+          </south>
+          <west>
+              <offset>(0.15, 0, -0.04)</offset>
+          </west>
+      </offHandHoldOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
 </Defs>

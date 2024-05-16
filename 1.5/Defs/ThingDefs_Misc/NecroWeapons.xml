@@ -125,7 +125,7 @@
 
   <!-- NecroSaberMech -->
 
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="BaseWeapon">
     <defName>pphhyy_NecroSaberMech</defName>
     <label>Necro saber</label>
     <description>DESCRIPTION</description>
@@ -172,16 +172,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <recipeMaker>
-      <researchPrerequisites>
-        <li>Smithing</li>
-        <li>pphhyy_NecroTechGearTier2</li>
-      </researchPrerequisites>
-      <skillRequirements>
-        <Crafting>3</Crafting>
-      </skillRequirements>
-      <displayPriority>410</displayPriority>
-    </recipeMaker>
+
   </ThingDef>
 
   <!-- Drill -->
@@ -228,23 +219,10 @@
         <cooldownTime>1.8</cooldownTime>
       </li>
     </tools>
-    <recipeMaker>
-      <recipeUsers>
-        <li>FueledSmithy</li>
-        <li>ElectricSmithy</li>
-      </recipeUsers>
-      <researchPrerequisites>
-        <li>Smithing</li>
-        <li>pphhyy_NecroTechGearTier2</li>
-      </researchPrerequisites>
-      <skillRequirements>
-        <Crafting>3</Crafting>
-      </skillRequirements>
-    </recipeMaker>
   </ThingDef>
 
   <!-- Saw -->
-  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>pphhyy_NecroSaw</defName>
     <label>Necro saw</label>
     <description>DESCRIPTION</description>
@@ -462,7 +440,7 @@
   </ThingDef>
 
   <!-- Necro Spear Mech -->
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="BaseWeapon">
     <defName>pphhyy_NecroSpearMech</defName>
     <label>Necrospear</label>
     <description>DESCRIPTION</description>
@@ -477,9 +455,6 @@
     <weaponTags>
       <li>pphhyyNecroAltair</li>
     </weaponTags>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <statBases>
       <WorkToMake>12000</WorkToMake>
       <Mass>2</Mass>
@@ -505,16 +480,6 @@
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
-    <recipeMaker>
-      <researchPrerequisites>
-        <li>Smithing</li>
-        <li>pphhyy_NecroTechGearTier3</li>
-      </researchPrerequisites>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-      <displayPriority>330</displayPriority>
-    </recipeMaker>
   </ThingDef>
 
   <!-- Necro Cleaver -->
@@ -588,7 +553,7 @@
 
   <!-- Necro Cleaver Mech -->
 
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="BaseWeapon">
     <defName>pphhyy_NecroCleaverMech</defName>
     <label>Necro cleaver</label>
     <description>DESCRIPTION</description>
@@ -635,16 +600,7 @@
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
-    <recipeMaker>
-      <researchPrerequisites>
-        <li>Smithing</li>
-        <li>pphhyy_NecroTechGearTier3</li>
-      </researchPrerequisites>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <displayPriority>420</displayPriority>
-    </recipeMaker>
+
   </ThingDef>
 
   <!-- Necro Scythe -->
@@ -718,7 +674,7 @@
 
   <!-- Necro Scythe -->
 
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="BaseWeapon">
     <defName>pphhyy_NecroScytheMech</defName>
     <label>Necro scythe</label>
     <description>DESCRIPTION</description>
@@ -734,11 +690,7 @@
     <weaponTags>
       <li>pphhyyNecroTheristis</li>
     </weaponTags>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <statBases>
-      <WorkToMake>18000</WorkToMake>
       <Mass>2</Mass>
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
@@ -768,16 +720,6 @@
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
-    <recipeMaker>
-      <researchPrerequisites>
-        <li>Smithing</li>
-        <li>pphhyy_NecroTechGearTier3</li>
-      </researchPrerequisites>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <displayPriority>420</displayPriority>
-    </recipeMaker>
   </ThingDef>
 
 </Defs>

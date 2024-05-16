@@ -3,7 +3,7 @@
 
 <!-- Base Recipe -->
 <RecipeDef Name="pphhyy_BaseNecroSkeletonTier4" ParentName="pphhyy_BaseNecroSkeleton" Abstract="True">
-    <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
+    <researchPrerequisite>pphhyy_NecroTechUltra</researchPrerequisite>
     <ingredients>
         <li>
             <filter>
@@ -33,7 +33,7 @@
 </RecipeDef>
 
 <!-- Necro Arash -->
-<RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+<RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier4">
     <defName>pphhyy_Mech_NecroArash</defName>
     <label>gestate NecroArash</label>
     <description>Gestate a Necro Skeleton.</description>
@@ -43,7 +43,7 @@
 </RecipeDef>
 
 <!-- Necro Satrap -->
-<RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+<RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier4">
     <defName>pphhyy_Mech_NecroSatrap</defName>
     <label>gestate NecroSatrap</label>
     <description>Gestate a Necro Skeleton.</description>
