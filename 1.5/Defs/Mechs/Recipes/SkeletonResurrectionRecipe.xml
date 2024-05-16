@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <RecipeDef ParentName="BaseMechanoidResurrectionRecipe">
+        <defName>pphhyy_ResurrectSkeleton</defName>
+        <label>resurrect skeleton</label>
+        <description>Resurrect a friendly skeleton. So long as the skeleton's body is not completely destroyed, it can be resurrected.</description>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Corpses</li>
+              </categories>
+            </filter>
+            <count>1</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>pphhyy_NecroMetal</li>
+              </thingDefs>
+            </filter>
+            <count>10</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>pphhyy_VitaeOil</li>
+              </thingDefs>
+            </filter>
+            <count>10</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Corpse_pphhyy_Mech_NecroKathari</li>
+            <li>Corpse_pphhyy_Mech_NecroAgri</li>
+            <li>Corpse_pphhyy_Mech_NecroAnelk</li>
+            <li>Corpse_pphhyy_Mech_NecroKatask</li>
+            <li>Corpse_pphhyy_Mech_NecroHelots</li>
+            <li>Corpse_pphhyy_Mech_NecroSafra</li>
+            <li>Corpse_pphhyy_Mech_NecroDathaba</li>
+            <li>Corpse_pphhyy_Mech_NecroExoryxi</li>
+            <li>Corpse_pphhyy_Mech_NecroEfreet</li>
+            <li>Corpse_pphhyy_Mech_NecroParthi</li>
+            <li>Corpse_pphhyy_Mech_NecroGoliath</li>
+            <li>Corpse_pphhyy_Mech_NecroCycloptic</li>
+            <li>Corpse_pphhyy_Mech_NecroAltair</li>
+            <li>Corpse_pphhyy_Mech_NecroAdar</li>
+            <li>Corpse_pphhyy_Mech_NecroSkafos</li>
+            <li>Corpse_pphhyy_Mech_NecroZahhak</li>
+            <li>Corpse_pphhyy_Mech_NecroAspida</li>
+            <li>Corpse_pphhyy_Mech_NecroArash</li>
+            <li>Corpse_pphhyy_Mech_NecroSatrap</li>
+            <li>Corpse_pphhyy_Mech_NecroTheristis</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+      </RecipeDef>
+
+</Defs>

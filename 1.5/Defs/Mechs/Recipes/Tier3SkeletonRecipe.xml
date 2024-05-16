@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Base Recipe -->
+<RecipeDef Name="pphhyy_BaseNecroSkeletonTier3" ParentName="pphhyy_BaseNecroSkeleton" Abstract="True">
+    <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>pphhyy_NecroMetal</li>
+                </thingDefs>
+            </filter>
+            <count>50</count>
+        </li>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>pphhyy_VitaeOil</li>
+                </thingDefs>
+            </filter>
+            <count>50</count>
+        </li>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>SubcoreRegular</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+</RecipeDef>
+
+ <!-- Necro Goliath -->
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+    <defName>pphhyy_Mech_NecroGoliath</defName>
+    <label>gestate NecroGoliath</label>
+    <description>Gestate a Necro Skeleton.</description>
+    <products>
+        <pphhyy_Mech_NecroGoliath>1</pphhyy_Mech_NecroGoliath>
+    </products>
+</RecipeDef>
+
+ <!-- Necro Cycloptic -->
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+    <defName>pphhyy_Mech_NecroCycloptic</defName>
+    <label>gestate NecroCycloptic</label>
+    <description>Gestate a Necro Skeleton.</description>
+    <products>
+        <pphhyy_Mech_NecroCycloptic>1</pphhyy_Mech_NecroCycloptic>
+    </products>
+</RecipeDef> 
+
+ <!-- Necro Altair -->
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+    <defName>pphhyy_Mech_NecroAltair</defName>
+    <label>gestate NecroAltair</label>
+    <description>Gestate a Necro Skeleton.</description>
+    <products>
+        <pphhyy_Mech_NecroAltair>1</pphhyy_Mech_NecroAltair>
+    </products>
+</RecipeDef>
+
+ <!-- Necro Adar -->
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+    <defName>pphhyy_Mech_NecroAdar</defName>
+    <label>gestate NecroAdar</label>
+    <description>Gestate a Necro Skeleton.</description>
+    <products>
+        <pphhyy_Mech_NecroAdar>1</pphhyy_Mech_NecroAdar>
+    </products>
+</RecipeDef>
+
+ <!-- Necro Skafos -->
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+    <defName>pphhyy_Mech_NecroSkafos</defName>
+    <label>gestate NecroSkafos</label>
+    <description>Gestate a Necro Skeleton.</description>
+    <products>
+        <pphhyy_Mech_NecroSkafos>1</pphhyy_Mech_NecroSkafos>
+    </products>
+</RecipeDef>
+
+ <!-- Necro Zahhak -->
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+    <defName>pphhyy_Mech_NecroZahhak</defName>
+    <label>gestate NecroZahhak</label>
+    <description>Gestate a Necro Skeleton.</description>
+    <products>
+        <pphhyy_Mech_NecroZahhak>1</pphhyy_Mech_NecroZahhak>
+    </products>
+</RecipeDef>
+
+ <!-- Necro Aspida -->
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+    <defName>pphhyy_Mech_NecroAspida</defName>
+    <label>gestate NecroAspida</label>
+    <description>Gestate a Necro Skeleton.</description>
+    <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
+    <products>
+        <pphhyy_Mech_NecroAspida>1</pphhyy_Mech_NecroAspida>
+    </products>
+</RecipeDef>
+
+</Defs>

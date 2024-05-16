@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- NecroExoryxi -->
+    <ThingDef ParentName="pphhyy_NecroSkeletonBase">
+        <defName>pphhyy_Mech_NecroExoryxi</defName>
+        <label>Necro-Exoryxi</label>
+        <description>skelyboi.</description>
+        <race>
+            <mechEnabledWorkTypes>
+                <li>Mining</li>
+            </mechEnabledWorkTypes>
+        </race>
+    </ThingDef>
+
+    <PawnKindDef ParentName="LightMechanoidKind">
+        <defName>pphhyy_Mech_NecroExoryxi</defName>
+        <label>Necro-Exoryxi</label>
+        <race>pphhyy_Mech_NecroExoryxi</race>
+        <combatPower>20</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Mechs/Exoryxi/NecroExoryxi</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.55</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <weaponTags>
+            <li>pphhyyNecroExoryxi</li>
+        </weaponTags>
+    </PawnKindDef>
+
+    <!-- NecroDathaba -->
+    <ThingDef ParentName="pphhyy_NecroSkeletonBase">
+        <defName>pphhyy_Mech_NecroDathaba</defName>
+        <label>Necro-Dathaba</label>
+        <description>skelyboi.</description>
+        <statBases>
+            <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+        </statBases>
+    </ThingDef>
+
+    <PawnKindDef ParentName="LightMechanoidKind">
+        <defName>pphhyy_Mech_NecroDathaba</defName>
+        <label>Necro Dathaba</label>
+        <race>pphhyy_Mech_NecroDathaba</race>
+        <combatPower>50</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Mechs/Dathaba/NecroDathaba</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.55</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <weaponTags>
+            <li>pphhyyNecroDathaba</li>
+        </weaponTags>
+    </PawnKindDef>
+    <!-- NecroParthi -->
+    <ThingDef ParentName="pphhyy_NecroSkeletonBase">
+        <defName>pphhyy_Mech_NecroParthi</defName>
+        <label>Necro-Parthi</label>
+        <description>skelyboi.</description>
+        <statBases>
+            <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+        </statBases>
+    </ThingDef>
+
+    <PawnKindDef ParentName="LightMechanoidKind">
+        <defName>pphhyy_Mech_NecroParthi</defName>
+        <label>Necro-Parthi</label>
+        <race>pphhyy_Mech_NecroParthi</race>
+        <combatPower>50</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Mechs/Parthi/NecroParthi</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.55</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <weaponTags>
+            <li>MechanoidGunLongRange</li>
+        </weaponTags>
+    </PawnKindDef>
+    <!-- NecroEfreet -->
+    <ThingDef ParentName="pphhyy_NecroSkeletonBase">
+        <defName>pphhyy_Mech_NecroEfreet</defName>
+        <label>Necro-Efreet</label>
+        <description>skelyboi.</description>
+        <statBases>
+            <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+        </statBases>
+    </ThingDef>
+
+    <PawnKindDef ParentName="LightMechanoidKind">
+        <defName>pphhyy_Mech_NecroEfreet</defName>
+        <label>Necro-Efreet</label>
+        <race>pphhyy_Mech_NecroEfreet</race>
+        <combatPower>50</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Mechs/Efreet/NecroEfreet</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.55</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <weaponTags>
+            <li>pphhyyNecroEfreet</li>
+        </weaponTags>
+    </PawnKindDef>
+</Defs>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- NecroGoliath -->
+    <ThingDef ParentName="pphhyy_NecroSkeletonBase">
+        <defName>pphhyy_Mech_NecroGoliath</defName>
+        <label>Necro-Goliath</label>
+        <description>skelyboi.</description>
+        <statBases>
+            <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+        </statBases>
+    </ThingDef>
+
+    <PawnKindDef ParentName="LightMechanoidKind">
+        <defName>pphhyy_Mech_NecroGoliath</defName>
+        <label>Necro Goliath</label>
+        <race>pphhyy_Mech_NecroGoliath</race>
+        <combatPower>80</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Mechs/Goliath/NecroGoliath</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.80</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <weaponTags>
+            <li>pphhyyNecroHelots</li>
+        </weaponTags>
+    </PawnKindDef>
+
+    <!-- NecroCycloptic -->
+    <ThingDef ParentName="pphhyy_NecroSkeletonBase">
+        <defName>pphhyy_Mech_NecroCycloptic</defName>
+        <label>Necro-Cycloptic</label>
+        <description>skelyboi.</description>
+        <statBases>
+            <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+        </statBases>
+    </ThingDef>
+
+    <PawnKindDef ParentName="LightMechanoidKind">
+        <defName>pphhyy_Mech_NecroCycloptic</defName>
+        <label>Necro Cycloptic</label>
+        <race>pphhyy_Mech_NecroCycloptic</race>
+        <combatPower>80</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Mechs/Cycloptic/NecroCycloptic</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.80</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <weaponTags> 
+            <li>pphhyyNecroCycloptic</li>
+        </weaponTags>
+    </PawnKindDef>
+
+<!-- Necro Zahhak-->
+<ThingDef ParentName="pphhyy_NecroSkeletonBase">
+    <defName>pphhyy_Mech_NecroZahhak</defName>
+    <label>Necro-Zahhak</label>
+    <description>skelyboi.</description>
+    <statBases>
+        <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+    </statBases>
+</ThingDef>
+
+<PawnKindDef ParentName="LightMechanoidKind">
+    <defName>pphhyy_Mech_NecroZahhak</defName>
+    <label>Necro-Zahhak</label>
+    <race>pphhyy_Mech_NecroZahhak</race>
+    <combatPower>45</combatPower>
+    <lifeStages>
+        <li>
+            <bodyGraphicData>
+                <texPath>Mechs/WorkMechs/NecroZahhak</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>1.50</drawSize>
+                <shadowData>
+                    <volume>(0.3, 0.4, 0.3)</volume>
+                    <offset>(0,0,-0.25)</offset>
+                </shadowData>
+            </bodyGraphicData>
+        </li>
+    </lifeStages>
+</PawnKindDef>
+
+<!-- Necro Skafos -->
+
+<ThingDef ParentName="pphhyy_NecroSkeletonBase">
+    <defName>pphhyy_Mech_NecroSkafos</defName>
+    <label>Necro-Skafos</label>
+    <description>skelyboi.</description>
+    <statBases>
+        <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+    </statBases>
+</ThingDef>
+
+<PawnKindDef ParentName="LightMechanoidKind">
+    <defName>pphhyy_Mech_NecroSkafos</defName>
+    <label>Necro-Skafos</label>
+    <race>pphhyy_Mech_NecroSkafos</race>
+    <combatPower>45</combatPower>
+    <lifeStages>
+        <li>
+            <bodyGraphicData>
+                <texPath>Mechs/WorkMechs/NecroSkafos</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>1.50</drawSize>
+                <shadowData>
+                    <volume>(0.3, 0.4, 0.3)</volume>
+                    <offset>(0,0,-0.25)</offset>
+                </shadowData>
+            </bodyGraphicData>
+        </li>
+    </lifeStages>
+</PawnKindDef>
+
+<!-- Necro Adar-->
+<ThingDef ParentName="pphhyy_NecroSkeletonBase">
+    <defName>pphhyy_Mech_NecroAdar</defName>
+    <label>Necro-Adar</label>
+    <description>skelyboi.</description>
+    <statBases>
+        <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+    </statBases>
+</ThingDef>
+
+<PawnKindDef ParentName="LightMechanoidKind">
+    <defName>pphhyy_Mech_NecroAdar</defName>
+    <label>Necro Adar</label>
+    <race>pphhyy_Mech_NecroAdar</race>
+    <combatPower>50</combatPower>
+    <lifeStages>
+        <li>
+            <bodyGraphicData>
+                <texPath>Mechs/Parthi/NecroParthi</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>1.55</drawSize>
+                <shadowData>
+                    <volume>(0.3, 0.4, 0.3)</volume>
+                    <offset>(0,0,-0.25)</offset>
+                </shadowData>
+            </bodyGraphicData>
+        </li>
+    </lifeStages>
+    <weaponTags>
+        <li>MechanoidGunMiniFlameblaster</li>
+    </weaponTags>
+</PawnKindDef>
+
+<!-- Necro Altair -->
+
+<ThingDef ParentName="pphhyy_NecroSkeletonBase">
+    <defName>pphhyy_Mech_NecroAltair</defName>
+    <label>Necro-Altair</label>
+    <description>skelyboi.</description>
+    <statBases>
+        <MoveSpeed>4.2</MoveSpeed>
+        <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+    </statBases>
+</ThingDef>
+
+<PawnKindDef ParentName="LightMechanoidKind">
+    <defName>pphhyy_Mech_NecroAltair</defName>
+    <label>Necro Altair</label>
+    <race>pphhyy_Mech_NecroAltair</race>
+    <combatPower>50</combatPower>
+    <abilities>
+        <li>FirefoampopMech</li>
+        <li>LongjumpMechLauncher</li>
+      </abilities>
+    <lifeStages>
+        <li>
+            <bodyGraphicData>
+                <texPath>Mechs/Altair/NecroAltair</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>1.65</drawSize>
+                <shadowData>
+                    <volume>(0.3, 0.4, 0.3)</volume>
+                    <offset>(0,0,-0.25)</offset>
+                </shadowData>
+            </bodyGraphicData>
+        </li>
+    </lifeStages>
+    <weaponTags>
+        <li>pphhyyNecroAltair</li>
+    </weaponTags>
+</PawnKindDef>
+
+<!-- Necro Aspida -->
+
+<ThingDef ParentName="pphhyy_NecroSkeletonBase">
+    <defName>pphhyy_Mech_NecroAspida</defName>
+    <label>Necro-Aspida</label>
+    <description>skelyboi.</description>
+    <statBases>
+        <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+    </statBases>
+    <comps>
+        <li Class="CompProperties_ProjectileInterceptor">
+          <radius>6</radius>
+          <interceptGroundProjectiles>true</interceptGroundProjectiles>
+          <color>(0.4, 0.4, 0.4)</color>
+          <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+          <activeSound>BulletShield_Ambience</activeSound>
+          <hitPoints>300</hitPoints>
+          <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+          <chargeDurationTicks>1800</chargeDurationTicks><!-- 30s -->
+          <rechargeHitPointsIntervalTicks>120</rechargeHitPointsIntervalTicks>
+          <minIdleAlpha>0.2</minIdleAlpha>
+          <drawWithNoSelection>True</drawWithNoSelection>
+          <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+          <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+        </li>
+      </comps>
+</ThingDef>
+
+<PawnKindDef ParentName="LightMechanoidKind">
+    <defName>pphhyy_Mech_NecroAspida</defName>
+    <label>Necro Aspida</label>
+    <race>pphhyy_Mech_NecroAspida</race>
+    <combatPower>50</combatPower>
+    <lifeStages>
+        <li>
+            <bodyGraphicData>
+                <texPath>Mechs/Aspida/NecroAspida</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>1.60</drawSize>
+                <shadowData>
+                    <volume>(0.3, 0.4, 0.3)</volume>
+                    <offset>(0,0,-0.25)</offset>
+                </shadowData>
+            </bodyGraphicData>
+        </li>
+    </lifeStages>
+</PawnKindDef>
+
+</Defs>

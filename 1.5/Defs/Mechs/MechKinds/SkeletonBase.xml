@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="pphhyy_NecroSkeletonBase" ParentName="BaseMechanoid" Abstract="True">
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <MoveSpeed>3.8</MoveSpeed>
+            <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+            <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+        </statBases>
+        <race>
+            <lifeStageAges>
+                <li>
+                    <def>MechanoidFullyFormed</def>
+                    <minAge>0</minAge>
+                    <soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+                    <soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+                    <soundCall>Pawn_Mech_Militor_Call</soundCall>
+                </li>
+            </lifeStageAges>
+            <body>pphhyy_NecroSkeleton</body>
+            <intelligence>ToolUser</intelligence>
+            <thinkTreeMain>Mechanoid</thinkTreeMain>
+            <baseBodySize>1</baseBodySize>
+            <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+            <mechWeightClass>Light</mechWeightClass>
+        </race>
+        <butcherProducts>
+            <pphhyy_NecroMetal>25</pphhyy_NecroMetal>
+        </butcherProducts>
+        <tools>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>2.6</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+            </li>
+        </tools>
+    </ThingDef>
+</Defs>

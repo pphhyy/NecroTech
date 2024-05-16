@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <WorkGiverDef>
+    <defName>DoBillsNecroGestator</defName>
+    <label>make things at necro gestator</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>210</priorityInType>
+    <fixedBillGiverDefs>
+      <li>pphhyy_gestator</li>
+    </fixedBillGiverDefs>
+    <verb>work at</verb>
+    <gerund>working at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+</Defs>

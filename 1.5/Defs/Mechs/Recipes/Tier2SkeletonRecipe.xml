@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<!-- Base Recipe -->
+<RecipeDef Name="pphhyy_BaseNecroSkeletonTier2" ParentName="pphhyy_BaseNecroSkeleton" Abstract="True">
+    <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>pphhyy_NecroMetal</li>
+                </thingDefs>
+            </filter>
+            <count>40</count>
+        </li>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>pphhyy_VitaeOil</li>
+                </thingDefs>
+            </filter>
+            <count>40</count>
+        </li>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>SubcoreBasic</li>
+                </thingDefs>
+            </filter>
+            <count>2</count>
+        </li>
+    </ingredients>
+</RecipeDef>
+
+ <!-- Necro Dathaba -->
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+    <defName>pphhyy_Mech_NecroDathaba</defName>
+    <label>gestate NecroDathaba</label>
+    <description>Gestate a Necro Skeleton.</description>
+    <products>
+        <pphhyy_Mech_NecroDathaba>1</pphhyy_Mech_NecroDathaba>
+    </products>
+</RecipeDef>
+
+ <!-- Necro Exoryxi -->
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+    <defName>pphhyy_Mech_NecroExoryxi</defName>
+    <label>gestate NecroExoryxi</label>
+    <description>Gestate a Necro Skeleton.</description>
+    <products>
+        <pphhyy_Mech_NecroExoryxi>1</pphhyy_Mech_NecroExoryxi>
+    </products>
+</RecipeDef>
+
+ <!-- Necro Efreet -->
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+    <defName>pphhyy_Mech_NecroEfreet</defName>
+    <label>gestate NecroEfreet</label>
+    <description>Gestate a Necro Skeleton.</description>
+    <products>
+        <pphhyy_Mech_NecroEfreet>1</pphhyy_Mech_NecroEfreet>
+    </products>
+</RecipeDef>
+
+ <!-- Necro Parthi -->
+ <RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+    <defName>pphhyy_Mech_NecroParthi</defName>
+    <label>gestate NecroParthi</label>
+    <description>Gestate a Necro Skeleton.</description>
+    <products>
+        <pphhyy_Mech_NecroParthi>1</pphhyy_Mech_NecroParthi>
+    </products>
+</RecipeDef>
+
+
+</Defs>

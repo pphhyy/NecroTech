@@ -11,25 +11,20 @@
 		  <graphicClass>Graphic_StackCount</graphicClass>
 		  <drawSize>1.5</drawSize>
 		</graphicData>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <stackLimit>75</stackLimit>
-
-		<soundInteract>Wood_Drop</soundInteract>
-		<soundDrop>Wood_Drop</soundDrop>
-		
-		<statBases>
-		  <MarketValue>1.0</MarketValue>
-		  <MaxHitPoints>150</MaxHitPoints>
-		  <Mass>0.25</Mass>
-		  <StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
-		  <StuffPower_Armor_Blunt>0.55</StuffPower_Armor_Blunt>
-		  <StuffPower_Armor_Heat>0.4</StuffPower_Armor_Heat>
-		  <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
-		  <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
-		  <SharpDamageMultiplier>1</SharpDamageMultiplier>
-		  <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
-		</statBases>
-		
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <statBases>
+          <MarketValue>1.9</MarketValue>
+          <Mass>0.5</Mass>
+          <StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+          <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
+          <StuffPower_Armor_Heat>0.60</StuffPower_Armor_Heat>
+          <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+          <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+          <SharpDamageMultiplier>1</SharpDamageMultiplier>
+          <BluntDamageMultiplier>1</BluntDamageMultiplier>
+        </statBases>
+		    <healthAffectsPrice>false</healthAffectsPrice>
 		<thingCategories>
 		  <li>ResourcesRaw</li>
 		</thingCategories>
@@ -46,12 +41,13 @@
               <li>Metallic</li>
 		  </categories>
 		  <commonality>0.01</commonality>
-		  <constructEffect>ConstructWood</constructEffect>
+      <constructEffect>ConstructMetal</constructEffect>
 		  <color>(187,50,63)</color>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
 		  <appearance>Planks</appearance>
-		  <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
-		  <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
-		  <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
 		  <statFactors>
 			  <MaxHitPoints>0.5</MaxHitPoints>
 			  <Beauty>1</Beauty>
@@ -63,7 +59,7 @@
 		  </statFactors>
 		</stuffProps>
 		
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 	</ThingDef>
 
   <RecipeDef>

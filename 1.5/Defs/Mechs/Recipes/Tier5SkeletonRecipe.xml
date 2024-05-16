@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<!-- Base Recipe -->
+<RecipeDef Name="pphhyy_BaseNecroSkeletonTier5" ParentName="pphhyy_BaseNecroSkeleton" Abstract="True">
+    <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>pphhyy_NecroMetal</li>
+                </thingDefs>
+            </filter>
+            <count>100</count>
+        </li>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>pphhyy_VitaeOil</li>
+                </thingDefs>
+            </filter>
+            <count>100</count>
+        </li>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>SubcoreHigh</li>
+                </thingDefs>
+            </filter>
+            <count>2</count>
+        </li>
+    </ingredients>
+</RecipeDef>
+
+<!-- Necro Theristis -->
+<RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+    <defName>pphhyy_Mech_NecroTheristis</defName>
+    <label>gestate NecroTheristis</label>
+    <description>Gestate a Necro Skeleton.</description>
+    <products>
+        <pphhyy_Mech_NecroTheristis>1</pphhyy_Mech_NecroTheristis>
+    </products>
+</RecipeDef>
+
+</Defs>
