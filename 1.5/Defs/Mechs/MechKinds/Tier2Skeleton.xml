@@ -67,6 +67,17 @@
         <weaponTags>
             <li>pphhyyNecroDathaba</li>
         </weaponTags>
+        <modExtensions>
+            <li Class="VFECore.PawnKindDefExtension">
+              <shieldMoney>
+                <min>1000</min>
+                <max>1500</max>
+              </shieldMoney>
+              <shieldTags>
+                <li>ShieldDathaba</li>
+              </shieldTags>
+            </li>
+        </modExtensions>
     </PawnKindDef>
     <!-- NecroParthi -->
     <ThingDef ParentName="pphhyy_NecroSkeletonBase">

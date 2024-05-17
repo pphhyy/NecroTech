@@ -171,6 +171,17 @@
         <weaponTags>
             <li>pphhyyNecroHelots</li>
         </weaponTags>
+        <modExtensions>
+            <li Class="VFECore.PawnKindDefExtension">
+              <shieldMoney>
+                <min>100</min>
+                <max>1000</max>
+              </shieldMoney>
+              <shieldTags>
+                <li>pphhyyShieldHelots</li>
+              </shieldTags>
+            </li>
+        </modExtensions>
     </PawnKindDef>
 
     <!-- NecroSafra -->

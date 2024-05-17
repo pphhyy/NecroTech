@@ -4,7 +4,7 @@
 
 <!-- Base Recipe -->
 <RecipeDef Name="pphhyy_BaseNecroSkeletonTier5" ParentName="pphhyy_BaseNecroSkeleton" Abstract="True">
-    <researchPrerequisite>pphhyy_NecroTechBasic</researchPrerequisite>
+    <researchPrerequisite>pphhyy_NecroTechExcessive</researchPrerequisite>
     <ingredients>
         <li>
             <filter>
@@ -34,7 +34,7 @@
 </RecipeDef>
 
 <!-- Necro Theristis -->
-<RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier1">
+<RecipeDef ParentName="pphhyy_BaseNecroSkeletonTier5">
     <defName>pphhyy_Mech_NecroTheristis</defName>
     <label>gestate NecroTheristis</label>
     <description>Gestate a Necro Skeleton.</description>
