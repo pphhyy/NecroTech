@@ -71,16 +71,13 @@
       <EnergyShieldEnergyMax>1.1</EnergyShieldEnergyMax>
       <EquipDelay>2</EquipDelay>
     </statBases>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <costList>
       <ComponentIndustrial>2</ComponentIndustrial>
       <pphhyy_NecroMetal>50</pphhyy_NecroMetal>
     </costList>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-      <researchPrerequisite>ShieldBelt</researchPrerequisite>
+      <researchPrerequisite>pphhyy_NecroTechGearTier3</researchPrerequisite>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <effectWorking>Smith</effectWorking>
@@ -468,6 +465,9 @@
       </offHandHoldOffset>
       </li>
     </comps>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_NecroTechGearTier2</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
   <!-- CMD Staff -->
@@ -522,6 +522,9 @@
       </offHandHoldOffset>
       </li>
     </comps>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_NecroTechGearTier3</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
   <!-- Helot Shield -->
@@ -584,6 +587,9 @@
       </offHandHoldOffset>
       </li>
     </comps>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_NecroTechGearTier1</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
   <!-- Helot Shield -->
@@ -646,6 +652,9 @@
       </offHandHoldOffset>
       </li>
     </comps>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_NecroTechGearTier3</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 </Defs>

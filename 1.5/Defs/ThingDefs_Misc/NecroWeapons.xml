@@ -219,6 +219,19 @@
         <cooldownTime>1.8</cooldownTime>
       </li>
     </tools>
+    <recipeMaker>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+      </recipeUsers>
+      <researchPrerequisites>
+        <li>Smithing</li>
+        <li>pphhyy_NecroTechGearTier2</li>
+      </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
   </ThingDef>
 
   <!-- Saw -->
@@ -262,7 +275,10 @@
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>Smithing</researchPrerequisite>
+      <researchPrerequisites>
+        <li>Smithing</li>
+        <li>pphhyy_NecroTechGearTier2</li>
+      </researchPrerequisites>
       <skillRequirements>
         <Crafting>3</Crafting>
       </skillRequirements>
